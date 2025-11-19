@@ -64,7 +64,7 @@ Create the following files inside the Tasks Folder
 - low.tasks
 - mid.tasks
 - high.tasks
-- today.tasks
+- crit.tasks
 
 > you can add any titles inside the files to match your requirements
 
