@@ -1,0 +1,7 @@
+[
+  {
+    "caption": "Tasks: Open Tasks View",
+    "command": "taskplugin_open_splitview",
+  },
+
+]

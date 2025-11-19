@@ -1,0 +1,31 @@
+%YAML 1.2
+---
+# https://www.sublimetext.com/docs/syntax.html
+name: TaskPlugin
+file_extensions:
+  - tasks
+scope: source.tasksplugin
+contexts:
+  main:
+    - match: '=='
+      push: titleseparator
+    - match: '^-'
+      push: todoentrystart
+    - match: " [A-Za-z0-9]+:"
+      push: maintask
+
+  titleseparator:
+    - meta_scope: comment.line.tasksplugin
+    - match: "\n"
+      pop: true
+
+  todoentrystart:
+    - meta_scope: constant.numeric.integer.tasksplugin
+    - match: ""
+      pop: true
+
+  maintask:
+    - meta_scope: string.quoted.single.tasksplugin
+    - match: " "
+      pop: true
+

@@ -1,0 +1,26 @@
+[
+  { 
+    "keys": ["tab"], "command": "move_to_higher_prio", 
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.tasksplugin" }
+    ] 
+  },
+  { 
+    "keys": ["shift+tab"], "command": "move_to_lower_prio", 
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.tasksplugin" }
+    ] 
+  },
+  { 
+    "keys": ["alt+left"], "command": "select_lower_prio_sheet", 
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.tasksplugin" }
+    ] 
+  },
+  { 
+    "keys": ["alt+right"], "command": "select_higher_prio_sheet", 
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.tasksplugin" }
+    ] 
+  },
+]
